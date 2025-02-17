@@ -65,7 +65,7 @@ class Movies{
                 yearMade:new Date('March 21, 2010'),
                 directors: ['dean deblois', 'chris sanders'],
                 network:'dreamworks',
-                isFavorite:false
+                
             },
             {
                 id: 'dr003',
