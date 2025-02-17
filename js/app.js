@@ -72,7 +72,7 @@ class Movies{
                 title: 'shrek',
                 genre:['animation', 'adventure', 'family', 'comedy', 'romance'],
                 yearMade:new Date('April 22, 2001'),
-                directors: ['roger allers', 'rob minkoff'],
+                directors: ['andrew adamson', 'vicky jenson'],
                 network:'dreamworks',
             },
             // finish the last three
@@ -104,12 +104,11 @@ class Movies{
         this.row = document.getElementById('row')
     }
 
-    // initializer
+
     init(){
         this.loadCards(this.data)
     }
 
-// buildCard
     buildCard(obj){
         const row = this.row
         
@@ -142,7 +141,6 @@ class Movies{
         row.appendChild(column)
     }
 
-    //loadCards
     loadCards(arr){
         this.row.innerHTML = ''
         arr.forEach(item =>this.buildCard(item))
